@@ -1,0 +1,130 @@
+*{
+margin: 0px;
+border: 0px;
+box-sizing: border-box;
+background-image: url(sky.jpg);
+background-size: cover;
+}
+.linksd{
+display:flex;
+margin: 4px ;
+box-shadow: whitesmoke;
+justify-content: right;
+
+}
+.button{
+border-radius: 30px;
+border: 2px solid whitesmoke;
+color: white;
+padding: 10px 10px;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+margin: 4px;
+transition: all 1s;
+text-decoration: none;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.button:hover{
+color: white;
+transform: scale(1.1);
+}
+img{
+transition: all 1s;;
+    display: block;
+    
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    float: left;
+    margin: 20px 20px;
+}
+img:hover{
+transform: scale(1.1);
+}
+h1{
+    background-color: transparent;
+    clear: both;;
+    text-align:center;
+    color: darkgray;
+    font-size: 8em;
+    font-family: 'Comforter', cursive;
+}
+
+
+p{
+font-stretch: expanded;
+    text-align:center;
+    text-shadow: rgb(24, 21, 21);
+    margin-top: 3%;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Sedgwick Ave', cursive;
+    
+}
+.ham{
+    display: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    border:2px solid white;
+    
+}
+.bar1,.bar2,.bar3{
+    display: block;
+    
+    width: 40px;
+    height: 0px;
+
+    margin: 7px auto;
+    border:2px solid white;
+    transition: 0.4s;
+}
+.fab{
+    display: flexbox;
+    color: white;
+    size: 32px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media(max-width:700px) {
+
+
+.linksd{ 
+display: none;
+
+    
+    
+}
+.linksd-change{
+    justify-content: center;  
+display: flex;
+position:absolute;   
+top:10vh;  
+right:0px;  
+flex-direction:column; 
+
+
+}  
+.ham{  
+display:block;
+justify-content: center;
+width: 60px;  
+float: right;
+}  
+.change .bar1 {  
+transform: rotate(45deg) translate(12px,3px);  
+margin-left: 2px;
+}  
+.change .bar2 {  
+opacity: 0;  
+}  
+.change .bar3 {  
+transform: rotate(-45deg) translate(12px,-3px);  
+margin-left: 2px;
+}  
+
+}
